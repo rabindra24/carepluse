@@ -109,7 +109,7 @@ export const updateAppointment = async ({
 
     console.log(appointment);
 
-    // await sendSMSNotification(userId, smsMessage);
+    await sendSMSNotification(userId, smsMessage);
 
     revalidatePath("/admin");
     return parseStringify(updatedOppointment);
